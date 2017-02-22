@@ -13,16 +13,19 @@ const style = {
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center',
-    margin: '1%',
+    margin: '8px',
+  },
+  div: {
+    width: '600px',
   },
   progressBar: {
     height: '34px',
-    margin: '1%',
-    width: '60%',
+    margin: '8px',
+    width: '300px',
   },
   scoreBox: {
-    margin: '1%',
-    width: '60%',
+    margin: '8px',
+    width: '300px',
   },
 };
 
@@ -136,7 +139,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div style={style.div}>
         <Panel>
           <LinearProgress
             color={amber500}
@@ -173,11 +176,11 @@ export default class Home extends Component {
           title="Game Over"
           actions={
             <FlatButton
-              label="Play Again"
+              label="PLAY AGAIN"
               onTouchTap={this.startGame}
             />
           }
-          modal={false}
+          modal={true}
           open={this.state.gameOver}
           onRequestClose={this.startGame}
         >

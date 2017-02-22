@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 const styles = {
   text: {
     display: 'flex',
-    fontSize: '56px',
+    fontSize: '45px',
     justifyContent: 'center',
-    margin: '1%',
+    margin: '8px',
   },
 };
 

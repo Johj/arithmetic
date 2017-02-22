@@ -7,10 +7,9 @@ const style = {
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '1%',
-    marginBottom: '1%',
-    padding: '1%',
-    width: '600px',
+    margin: '8px',
+    maxWidth: '600px',
+    padding: '8px',
   }
 };
 
